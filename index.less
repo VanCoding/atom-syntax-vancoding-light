@@ -1,0 +1,30 @@
+@blue: #607d8b;
+@purple: #7d399e;
+@green: #91b859;
+@orange: #F76D47;
+
+atom-text-editor {
+    background-color: white;
+    color: black;
+}
+
+.syntax--constant{
+	color: @orange;
+}
+
+.syntax--keyword, .syntax--storage, .syntax--language{
+	color: @purple;
+}
+
+.syntax--string{
+	color: @green;
+}
+
+.syntax--jade{
+	&.syntax--name, .syntax--class, .syntax--id{
+		color: @purple;
+	}
+	.syntax--constant{
+		color: black;
+	}
+}
